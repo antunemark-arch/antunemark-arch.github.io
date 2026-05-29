@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Liwanag | QA Engineer Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #f7fafc;
+            --text-color: #2d3748;
+            --accent-color: #3182ce;
+            --accent-hover: #2b6cb0;
+            --card-bg: #ffffff;
+            --dark-bg: #1a202c;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        header {
+            background: linear-gradient(135deg, var(--dark-bg), #2d3748);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        header h1 { margin: 0; font-size: 2.8rem; letter-spacing: 1px; }
+        header p { font-size: 1.3rem; color: #cbd5e0; margin: 15px 0 25px 0; }
+        .links a {
+            color: #63b3ed;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        .links a:hover { color: #90cdf4; text-decoration: underline; }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            background: var(--card-bg);
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: var(--accent-color);
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        h3 { margin-top: 0; color: var(--dark-bg); }
+        ul { padding-left: 20px; margin: 0; }
+        li { margin-bottom: 8px; }
+        .project-card {
+            border: 1px solid #e2e8f0;
+            padding: 25px;
+            border-radius: 6px;
+            background: #fcfcfc;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .tag {
+            display: inline-block;
+            background: #e2e8f0;
+            color: #4a5568;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-right: 5px;
+            margin-bottom: 10px;
+        }
+        .tag.js { background: #fef08a; color: #854d0e; }
+        .tag.pw { background: #fed7aa; color: #9a3412; }
+        .btn {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 15px;
+            font-size: 0.95rem;
+            font-weight: bold;
+            text-align: center;
+            transition: background 0.2s;
+        }
+        .btn:hover { background: var(--accent-hover); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mark Liwanag</h1>
+        <p>Information Technology Graduate | QA Automation Engineer</p>
+        <div class="links">
+            <a href="#" target="_blank">LinkedIn</a> | 
+            <a href="#" target="_blank">GitHub</a> | 
+            <a href="mailto:your.email@example.com">Email</a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <section>
+            <h2>About Me</h2>
+            <p>I am a meticulous Information Technology graduate passionate about software quality, web technologies, and optimizing the software development lifecycle. With a strong foundation in web development (HTML, CSS, JavaScript, and PHP), I bridge the gap between development and quality assurance. I leverage my coding background to build reliable automation scripts, perform deep-dive technical testing, and catch edge cases before they hit production.</p>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="grid">
+                <div>
+                    <h3>QA & Testing Foundations</h3>
+                    <ul>
+                        <li>Functional & Manual Testing</li>
+                        <li>Automated E2E Testing</li>
+                        <li>Regression & Integration Testing</li>
+                        <li>Test Case Design & Bug Reporting</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Web Technologies</h3>
+                    <ul>
+                        <li>JavaScript (ES6+)</li>
+                        <li>PHP</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>DOM Analysis & Browser DevTools</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Tools & Databases</h3>
+                    <ul>
+                        <li>Playwright</li>
+                        <li>Git & GitHub</li>
+                        <li>Postman (API Testing)</li>
+                        <li>SQL (MySQL)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Featured QA Projects</h2>
+            <div class="grid">
+                
+                <div class="project-card">
+                    <div>
+                        <span class="tag js">JavaScript</span>
+                        <span class="tag pw">Playwright</span>
+                        <h3>E-Commerce Login Automation Suite</h3>
+                        <p>Built a robust End-to-End automated test suite for SauceDemo using Playwright. Automated both positive (happy path) and negative (error handling) validation checkouts across Chromium, Firefox, and WebKit test runners simultaneously.</p>
+                    </div>
+                    <a href="#" target="_blank" class="btn">View GitHub Repository</a>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <span class="tag">Manual QA</span>
+                        <span class="tag">Documentation</span>
+                        <h3>Comprehensive Test Documentation Suite</h3>
+                        <p>Designed structured test cases, execution logs, and highly detailed, professional bug tracking reports following industry standards (Pre-conditions, Steps to Reproduce, Expected vs. Actual results).</p>
+                    </div>
+                    <a href="#" class="btn" style="background:#718096;">Coming Soon</a>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
