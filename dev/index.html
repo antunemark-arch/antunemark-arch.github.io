@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony Mark Liwanag | Full-Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="hero-section">
+            <div class="avatar-wrapper">
+                <img src="profile.jpg" alt="Anthony Mark Liwanag Profile Photo" class="profile-img">
+                <div class="status-badge">Available for Work</div>
+            </div>
+            
+            <h1 class="dev-name">Anthony Mark Liwanag</h1>
+            <p class="dev-title"><span id="greeting">Hello</span>! I'm a Full-Stack Developer &amp; Automation Engineer</p>
+            <p class="dev-bio">Information Technology graduate specializing in resilient server-side architectures, robust relational database modeling, and automated application safety pipelines.</p>
+            
+            <div class="social-links">
+                <button id="copy-email-btn" class="btn-link" data-email="markliwanag1102@gmail.com">Copy Email</button>
+                <a href="https://www.linkedin.com/in/anthony-mark-liwanag-0b9076308" target="_blank" class="btn-link">LinkedIn</a>
+                <a href="https://github.com/antunemark-arch" target="_blank" class="btn-link">GitHub</a>
+            </div>
+        </header>
+
+        <section class="portfolio-section">
+            <h2 class="section-title">Core Stack Capabilities</h2>
+            <div class="skills-wrapper">
+                <div class="skill-category">
+                    <h3>Backend &amp; Database</h3>
+                    <div class="pill-group">
+                        <span class="tech-pill">PHP</span>
+                        <span class="tech-pill">MySQL</span>
+                        <span class="tech-pill">Relational DB Design</span>
+                        <span class="tech-pill">SQL Optimization</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frontend Engineering</h3>
+                    <div class="pill-group">
+                        <span class="tech-pill">JavaScript (ES6)</span>
+                        <span class="tech-pill">HTML5 / CSS3</span>
+                        <span class="tech-pill">Flexbox &amp; Grid Layouts</span>
+                        <span class="tech-pill">Responsive Design</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Testing &amp; Tooling</h3>
+                    <div class="pill-group">
+                        <span class="tech-pill">Playwright Automation</span>
+                        <span class="tech-pill">Git / GitHub</span>
+                        <span class="tech-pill">VS Code</span>
+                        <span class="tech-pill">Agile / Scrum</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-section">
+            <h2 class="section-title">Production Engineering Projects</h2>
+            
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="php">PHP / MySQL</button>
+                <button class="filter-btn" data-filter="automation">Automation</button>
+            </div>
+
+            <div class="projects-grid" id="projects-container">
+                
+                <div class="modern-card" data-category="php">
+                    <div class="card-header">
+                        <span class="project-tag">Internship Case Study</span>
+                    </div>
+                    <h3>GCC Pickleball Reservation System</h3>
+                    <p class="project-role">Full-Stack Developer (OJT)</p>
+                    <p class="project-desc">Engineered a highly responsive digital reservation architecture handling automated court resource scheduling logic. Optimized core queries to completely eliminate runtime calendar multi-booking overlap anomalies.</p>
+                    <div class="card-footer-tags">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>Session Logic</span>
+                    </div>
+                </div>
+
+                <div class="modern-card" data-category="php">
+                    <div class="card-header">
+                        <span class="project-tag">Academic Capstone</span>
+                    </div>
+                    <h3>Relational Enterprise Portal Architecture</h3>
+                    <p class="project-role">Full-Stack Developer &amp; Lead Programmer</p>
+                    <p class="project-desc">Architected the entire end-to-end web system. Developed dynamic server-side business logic using <strong>PHP Core</strong>, engineered normalized multi-table database models in <strong>MySQL</strong>, and designed crisp user interfaces protected by input sanitation layers.</p>
+                    <div class="card-footer-tags">
+                        <span>PHP Core</span>
+                        <span>MySQL (RDBMS)</span>
+                        <span>Full-Stack Architecture</span>
+                    </div>
+                </div>
+
+                <div class="modern-card" data-category="automation">
+                    <div class="card-header">
+                        <span class="project-tag">Quality Assurance</span>
+                    </div>
+                    <h3>Browser Automation Test Suites</h3>
+                    <p class="project-role">Automation Programmer</p>
+                    <p class="project-desc">Programmed asynchronous End-to-End integration test scripts using Playwright. Automated form entry submission, race condition handling, and web assertions to protect code quality pipelines.</p>
+                    <div class="card-footer-tags">
+                        <span>JavaScript</span>
+                        <span>Playwright</span>
+                        <span>Async/Await</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="modern-footer">
+            <p>Hand-coded with semantic HTML5 &amp; modern JavaScript. &copy; 2026</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+ </body>
+</html>

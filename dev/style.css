@@ -1,0 +1,276 @@
+/* Core Variables & Resets */
+        :root {
+            --bg-dark: #0f172a;       /* Deep slate midnight space */
+            --card-dark: #1e293b;     /* Lighter container slate padding */
+            --text-primary: #f8fafc;  /* Clean high contrast white text */
+            --text-muted: #94a3b8;    /* Softer grey for descriptions */
+            --accent-blue: #38bdf8;   /* Striking bright developer cyan blue */
+            --pill-bg: #334155;       /* Tech capsule background block */
+            --border-color: #334155;  /* Clean separation edge line */
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        /* Base Wrapper Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Upgraded Hero Header */
+        .hero-section {
+            text-align: center;
+            padding: 4rem 1rem 3rem 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .avatar-wrapper {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent-blue);
+            display: block;
+        }
+
+        .status-badge {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            background-color: #22c55e; /* Vibrant active green pulse */
+            color: #ffffff;
+            font-size: 0.75rem;
+            font-weight: bold;
+            padding: 0.25rem 0.6rem;
+            border-radius: 20px;
+            border: 2px solid var(--bg-dark);
+        }
+
+        .dev-name {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        .dev-title {
+            color: var(--accent-blue);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .dev-bio {
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 1.5rem auto;
+            font-size: 1rem;
+        }
+
+        /* Sleek Action Buttons Layout */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .btn-link {
+            color: var(--text-primary);
+            text-decoration: none;
+            background: transparent;
+            border: 1px solid var(--border-color);
+            padding: 0.5rem 1.25rem;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            cursor: pointer; /* Uniform pointer for links and copy button */
+            transition: all 0.2s ease-in-out;
+        }
+
+        .btn-link:hover {
+            background-color: var(--accent-blue);
+            color: var(--bg-dark);
+            border-color: var(--accent-blue);
+        }
+
+        /* Functional Section Dividers */
+        .portfolio-section {
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 40px;
+            height: 3px;
+            background-color: var(--accent-blue);
+            border-radius: 2px;
+        }
+
+        /* Modern Tech Capsule Pills Grid */
+        .skills-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .skill-category h3 {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            margin-bottom: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .pill-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tech-pill {
+            background-color: var(--pill-bg);
+            color: var(--text-primary);
+            padding: 0.35rem 0.85rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border: 1px solid transparent;
+        }
+
+        /* Premium Project Cards Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .modern-card {
+            background-color: var(--card-dark);
+            border: 1px solid var(--border-color);
+            padding: 1.75rem;
+            border-radius: 8px;
+            transition: opacity 0.25s ease, transform 0.25s ease, border-color 0.2s ease;
+        }
+
+        .modern-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+        }
+
+        .card-header {
+            margin-bottom: 0.75rem;
+        }
+
+        .project-tag {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--accent-blue);
+            letter-spacing: 0.05em;
+        }
+
+        .modern-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .project-role {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .project-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Micro Footnotes Within Cards */
+        .card-footer-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+
+        .card-footer-tags span {
+            font-size: 0.75rem;
+            background-color: rgba(56, 189, 248, 0.1); 
+            color: var(--accent-blue);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        /* Filter Navigation Bar Styles */
+        .filter-controls {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .filter-btn {
+            background: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            padding: 0.4rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background-color: rgba(56, 189, 248, 0.1);
+            color: var(--accent-blue);
+            border-color: var(--accent-blue);
+        }
+
+        /* Footer Section */
+        .modern-footer {
+            text-align: center;
+            padding: 2.5rem 0;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* Fluid Layout Responsive Adaptations */
+        @media (max-width: 600px) {
+            .dev-name { font-size: 2rem; }
+            .projects-grid { grid-template-columns: 1fr; }
+            .social-links { flex-direction: column; gap: 0.5rem; }
+            .filter-controls { justify-content: center; }
+        }
