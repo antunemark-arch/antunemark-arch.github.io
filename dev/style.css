@@ -42,13 +42,28 @@
             margin-bottom: 1.5rem;
         }
 
-        .profile-img {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid var(--accent-blue);
-            display: block;
+        .status-badge-container {
+            margin-bottom: 1rem;
+        }
+
+        .status-badge-minimal {
+            background-color: rgba(34, 197, 94, 0.1); /* Subtle transparent green background tint */
+            color: #22c55e; /* Vibrant text green pulse */
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 0.35rem 0.75rem;
+            border-radius: 4px;
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            display: inline-block;
+        }
+
+        /* Add a touch of extra padding to balance out the missing avatar spacing */
+        .hero-section {
+            text-align: center;
+            padding: 5rem 1rem 3.5rem 1rem;
+            border-bottom: 1px solid var(--border-color);
         }
 
         .status-badge {
