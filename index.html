@@ -3,126 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anthony Mark A. Liwanag | QA Portfolio</title>
-    <style>
-        :root {
-            --bg-color: #f4f7f6;
-            --text-color: #333;
-            --accent-color: #2b6cb0;
-            --card-bg: #ffffff;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-        }
-        header {
-            background: linear-gradient(135deg, #1a202c, #2d3748);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
-        header h1 { margin: 0; font-size: 2.5rem; }
-        header p { font-size: 1.2rem; color: #cbd5e0; margin: 10px 0 20px 0; }
-        .links a {
-            color: #63b3ed;
-            margin: 0 10px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .links a:hover { text-decoration: underline; }
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        section {
-            background: var(--card-bg);
-            padding: 30px;
-            margin-bottom: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-        h2 {
-            color: var(--accent-color);
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 10px;
-            margin-top: 0;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        ul { padding-left: 20px; }
-        .project-card {
-            border: 1px solid #e2e8f0;
-            padding: 20px;
-            border-radius: 6px;
-            background: #fafafa;
-        }
-        .btn {
-            display: inline-block;
-            background: var(--accent-color);
-            color: white;
-            padding: 8px 15px;
-            text-decoration: none;
-            border-radius: 4px;
-            margin-top: 10px;
-            font-size: 0.9rem;
-        }
-        .btn:hover { background: #2c5282; }
-    </style>
+    <title>Anthony Mark Liwanag | QA Engineer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Anthony Mark A Liwanag</h1>
-        <p>Information Technology Graduate | Associate QA Engineer</p>
+        <h1>Anthony Mark A. Liwanag</h1>
+        <p>Information Technology Graduate | QA Automation Engineer</p>
         <div class="links">
-            <a href="#" target="_blank">LinkedIn</a> | 
-            <a href="#" target="_blank">GitHub</a> | 
-            <a href="mailto:your.email@example.com">Email</a>
+            <a href="https://www.linkedin.com/in/anthony-mark-liwanag-0b9076308" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/antunemark-arch" target="_blank">GitHub</a> | 
+            <a href="mailto:markliwanag1102@gmailcom">Email</a>
         </div>
     </header>
 
     <div class="container">
+        
         <section>
             <h2>About Me</h2>
-            <p>I am a meticulous Information Technology graduate passionate about software quality, web technologies, and breaking applications to make them better. With a solid foundation in web development (HTML, CSS, JavaScript, and PHP), I bridge the gap between development and quality assurance by understanding both how software is built and how it fails.</p>
+            <p>I am a meticulous Information Technology graduate passionate about software quality, web technologies, and optimizing the software development lifecycle. With a strong foundation in web development (HTML, CSS, JavaScript, and PHP), I bridge the gap between development and quality assurance. I leverage my coding background to build reliable automation scripts, perform deep-dive technical testing, and catch edge cases before they hit production.</p>
         </section>
 
         <section>
             <h2>Technical Skills</h2>
             <div class="grid">
                 <div>
-                    <h3>QA & Testing</h3>
+                    <h3>QA & Testing Foundations</h3>
                     <ul>
-                        <li>Functional/Manual Testing</li>
-                        <li>Bug Reporting & Tracking</li>
-                        <li>Test Case Design</li>
-                        <li>SDLC & STLC Frameworks</li>
+                        <li>Functional & Manual Testing</li>
+                        <li>Automated E2E Testing</li>
+                        <li>Regression & Integration Testing</li>
+                        <li>Test Case Design & Bug Reporting</li>
                     </ul>
                 </div>
                 <div>
                     <h3>Web Technologies</h3>
                     <ul>
-                        <li>JavaScript</li>
+                        <li>JavaScript (ES6+)</li>
                         <li>PHP</li>
                         <li>HTML5 & CSS3</li>
-                        <li>DOM & Browser DevTools</li>
+                        <li>DOM Analysis & Browser DevTools</li>
                     </ul>
                 </div>
                 <div>
                     <h3>Tools & Databases</h3>
                     <ul>
+                        <li>Playwright</li>
                         <li>Git & GitHub</li>
                         <li>Postman (API Testing)</li>
                         <li>SQL (MySQL)</li>
-                        <li>Jira (or Trello)</li>
                     </ul>
                 </div>
             </div>
@@ -131,18 +61,30 @@
         <section>
             <h2>Featured QA Projects</h2>
             <div class="grid">
+                
                 <div class="project-card">
-                    <h3>Project 1: Manual Test Suite & Bug Hunt</h3>
-                    <p>Comprehensive test cases and bug reports created for a production web application, focusing on edge cases and boundary analysis.</p>
-                    <a href="#" class="btn">View Case Study</a>
+                    <div>
+                        <span class="tag js">JavaScript</span>
+                        <span class="tag pw">Playwright</span>
+                        <h3>E-Commerce Login Automation Suite</h3>
+                        <p>Built a robust End-to-End automated test suite for SauceDemo using Playwright. Automated both positive (happy path) and negative (error handling) validation checkouts across Chromium, Firefox, and WebKit test runners simultaneously.</p>
+                    </div>
+                    <a href="https://github.com/antunemark-arch/playwright-qa-portfolio" target="_blank" class="btn">View GitHub Repository</a>
                 </div>
+
                 <div class="project-card">
-                    <h3>Project 2: API Testing with Postman</h3>
-                    <p>Testing backend endpoints, validating status codes, and writing basic JS validation scripts for response bodies.</p>
-                    <a href="#" class="btn">View Repository</a>
+                    <div>
+                        <span class="tag">Manual QA</span>
+                        <span class="tag">Documentation</span>
+                        <h3>Comprehensive Test Documentation Suite</h3>
+                        <p>Designed structured test cases, execution logs, and highly detailed, professional bug tracking reports following industry standards (Pre-conditions, Steps to Reproduce, Expected vs. Actual results).</p>
+                    </div>
+                    <a href="#" class="btn" style="background:#718096;">Coming Soon</a>
                 </div>
+
             </div>
         </section>
+
     </div>
 
 </body>
