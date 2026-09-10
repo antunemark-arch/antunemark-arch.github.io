@@ -945,38 +945,37 @@ export default function Home() {
 
               {/* AVATAR */}
 
-              <div
-                className="
-                  absolute
-                  left-1/2
-                  -translate-x-1/2
-                  bottom-[-2%]
-                  sm:bottom-[-2%]
-                  lg:bottom-[-1%]
-                  z-10
-                  w-[235px]
-                  sm:w-[330px]
-                  md:w-[390px]
-                  lg:w-[450px]
-                  xl:w-[500px]
-                "
-              >
-
-                <Image
-                  src="/avatars.png"
-                  alt="Anthony Mark 3D Avatar"
-                  width={600}
-                  height={600}
-                  priority
-                  className="
-                    w-full
-                    h-auto
-                    object-contain
-                    drop-shadow-[0_30px_35px_rgba(0,0,0,0.65)]
-                  "
-                />
-
-              </div>
+<div
+  className="
+    absolute
+    left-1/2
+    -translate-x-1/2
+    bottom-[12%]
+    sm:bottom-[13%]
+    md:bottom-[14%]
+    lg:bottom-[15%]
+    z-10
+    w-[235px]
+    sm:w-[330px]
+    md:w-[390px]
+    lg:w-[450px]
+    xl:w-[500px]
+  "
+>
+  <Image
+    src="/avatars.png"
+    alt="Anthony Mark 3D Avatar"
+    width={600}
+    height={600}
+    priority
+    className="
+      w-full
+      h-auto
+      object-contain
+      drop-shadow-[0_30px_35px_rgba(0,0,0,0.65)]
+    "
+  />
+</div>
 
             </div>
 
